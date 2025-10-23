@@ -1,0 +1,691 @@
+/* |[ESTRUCTURA DEL SITIO]| */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: #F2ece4;
+}
+
+header {
+    height: 100px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    background-color: #0D0D0D;
+}
+
+header a {
+    font-family: 'Jost Medium';
+    padding: 29.5px 20px;
+}
+
+nav {
+    display: flex;
+    margin-left: 0px;
+    gap: 0px;
+    font-size: 32px;
+}
+
+nav a {
+    border-radius: 0;
+    color: #BFB0A3;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    box-shadow: 0 2px 0px #BF265E50;
+}
+
+footer {
+    background-color: #2b3041;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 375px;
+}
+
+/* |[CLASES]| */
+
+/* ->> Clase img para imágenes de los productos */
+.img {
+    background-color: transparent;
+    box-shadow: -8px 8px 0px #592EF250;
+    border-radius: 25px;
+}
+
+.img:hover {
+    background-color: #592EF215;
+    box-shadow: -8px 8px 0px #592EF2;
+}
+
+/* |[NAVEGACIÓN DENTRO DEL SITIO]| */
+
+/*  ->> Botón Inicio */
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 525px;
+    height: 40px;
+    margin-right: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+    background-color: transparent;
+    border-top-color: #9cb0eb25;
+    border-left-color: #9cb0eb25;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 3px 4px 0px #9cb0eb25;
+    outline: #000000;
+}
+
+.search-box input:focus-within {
+    width: 525px;
+    height: 40px;
+    margin-right: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+    background-color: #9cb0eb05;
+    border-top-color: #9cb0eb75;
+    border-left-color: #9cb0eb75;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    box-shadow: 3px 4px 0px #9cb0eb;
+    outline: #000000;
+}
+
+.search-box input:hover {
+    width: 525px;
+    height: 40px;
+    margin-right: 20px;
+    color: #ffffff;
+    border-radius: 15px;
+    background-color: #9cb0eb05;
+    border-top-color: #9cb0eb75;
+    border-left-color: #9cb0eb75;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    box-shadow: 3px 4px 0px #9cb0eb;
+    outline: #000000;
+}
+
+.btn-inicio {
+    display: inline-block;
+    padding: 29.5px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-inicio:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: #007bff;
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+/* ->> Botón Catálogo */
+.btn-cat {
+    display: inline-block;
+    padding: 29.5px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-cat:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: #007bff;
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+/* ->> Botón Ofertas */
+.btn-offer {
+    display: inline-block;
+    padding: 29.5px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-offer:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: #007bff;
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+/* ->> Botón Contacto */
+.btn-contact {
+    display: inline-block;
+    padding: 29.5px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-contact:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: #007bff;
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+/* |[CONTENIDO DE LA PÁGINA]| */
+
+/* ->> Título */
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 1px 0px #ffffff;
+}
+
+.titulo h1 {
+    color: #f25050;
+    font-family: 'Jost Regular';
+    font-size: 48px;
+    margin-bottom: 0px;
+    text-shadow: 1px 3px 0px #000000;
+}
+
+.titulo p {
+    font-family: 'Jost Light';
+    font-size: 14px;
+}
+
+/* ->> Inicio de sesión */
+.iniciar-sesion {
+    background-color: #BFB0A3;
+    margin-left: 40%;
+    margin-top: 25px;
+    width: 325px;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 12px 10px 0px #402A1D;
+}
+
+.iniciar-sesion h1 {
+    margin-top: 0px;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    color: #261f1f;
+}
+
+.signIn {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+}
+
+.signMail {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* ->> Campo e-mail */
+.signMail input {
+    width: 225px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Jost Light';
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-top-color: #BFB0A325;
+    border-left-color: #BFB0A325;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    outline: #000000;
+    box-shadow: 3px 4px 0px #14192650;
+}
+
+
+.signMail input:focus-within {
+    font-family:'Jost';
+    color: #261F1F;
+    background-color: #F2884B25;
+    border-top-color: #BFB0A3;
+    border-left-color: #BFB0A3;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 3px 4px 0px #8C5845;
+}
+
+.signMail input:hover {
+    color: #261F1F;
+    background-color: #F2884B25;
+    border-top-color: #BFB0A3;
+    border-left-color: #BFB0A3;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 3px 4px 0px #8C5845;
+}
+
+/* ->> Campo contraseña */
+.pass {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pass input {
+    width: 225px;
+    height: 25px;
+    margin-bottom: 0px;
+    font-family: 'Jost Light';
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-top-color: #BFB0A325;
+    border-left-color: #BFB0A325;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    outline: #000000;
+    box-shadow: 3px 4px 0px #14192650;
+}
+
+.pass input:focus-within {
+    font-family:'Jost';
+    color: #261F1F;
+    background-color: #F2884B25;
+    border-top-color: #BFB0A3;
+    border-left-color: #BFB0A3;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 3px 4px 0px #8C5845;
+}
+
+.pass input:hover {
+    color: #261F1F;
+    background-color: #F2884B25;
+    border-top-color: #BFB0A3;
+    border-left-color: #BFB0A3;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 3px 4px 0px #8C5845;
+}
+
+/* ->> Crear una cuenta */
+.cuenta h2{
+    font-family: 'Jost Light';
+    font-size:14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #8C5845;
+}
+
+.cuenta a{
+    display: flex;
+    justify-content:center;
+    font-family:'Jost Medium';
+    text-decoration: none;
+    color:#0D65D9;
+    font-size: 10px;
+}
+
+.cuenta a:hover{
+    color:#007bff;
+}
+
+.btn-in{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.btn-in button{
+    color:#26262675;
+    background-color: transparent;
+    border-top-color: #ffffff50;
+    border-left-color:#ffffff50;
+    border-bottom-color: transparent;
+    border-right-color:transparent;
+    border-radius:5px;
+    width: 225px;
+    height:25px;
+    box-shadow: 3px 4px 0px #8C584550;
+}
+
+.btn-in button:hover{
+    color:#262626;
+    background-color: #F2884B25;
+    border-top-color: #ffffff;
+    border-left-color:#ffffff;
+    border-bottom-color: transparent;
+    border-right-color:transparent;
+    border-radius:5px;
+    width: 225px;
+    height:25px;
+    box-shadow: 3px 4px 0px #8C5845;
+}
+
+/* |[CATÁLOGO DE PRODUCTOS]| */
+
+.cat-title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 0px #4227ff10;
+}
+
+.cat-title h1 {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-family: 'Oswald Light';
+    font-size: 75px;
+    text-decoration: none;
+    color: #9095f0;
+    text-shadow: -3px 4px 0px #000000;
+}
+
+/* |[CATEGORÍA TECLADOS]| */
+
+/* ->> Título de la categoría */
+.kb-title {
+    font-family: 'Jost Regular';
+    color: #F25050;
+    font-size: 24px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 3px 0px #0D0D0D;
+}
+
+/* ->> Ícono ilustrativo */
+.kb-icon {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ->> Teclado 1 */
+
+/* -> Modelo */
+.kb-name-one{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    margin-left:140px;
+}
+.kb-name-one h1{
+    font-family:'Inter Tight Regular';
+    color:#0460D9;
+    text-shadow:2px 1px 0px #033473;
+}
+
+/* -> Precio */
+.kb-price-one{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+}
+
+.kb-price-one h2{
+    margin-left:485px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.kb-price-one h1{
+    font-family: 'Inter Tight Regular';
+    font-size: 18px;
+    margin-left:515px;
+    margin-top:-35px;
+    margin-bottom:-20px;
+    color:#592EF2;
+    text-shadow: 1px 1px 0px #141926;
+}
+
+/* -> Imagen */
+.kb-img-one{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    margin-left:75px;
+}
+
+/* -> Características */
+.kb-ftrs-one{
+    display: flex;
+    justify-content: left;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+.kb-ftrs-one ul{
+    margin-top:-375px;
+    margin-left:475px;
+    margin-bottom:0px;
+    list-style:none;
+    font-family:'Jost Light';
+    font-size:18px;
+
+}
+.kb-ftrs-one li{
+    margin-top:-5px;
+    margin-bottom:-50px;
+    color:#141926;
+}
+.kb-ftrs-one p{
+    text-decoration:none;
+    font-family:'Jost Light';
+    margin-top:5px;
+    margin-left:40px;
+}
+
+.kb-btn-one{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    flex-direction: column;
+    margin-top: -175px;
+}
+.kb-btn-one button{
+    font-family:'Jost Light';
+    font-size:14px;
+    width:225px;
+    height:30px;
+    text-align: center;
+    margin-left:-550px;
+    margin-bottom:15px;
+    background-color: transparent;
+    border-top-color:#592EF225;
+    border-left-color:#592EF225;
+    border-bottom-color:transparent;
+    border-right-color: transparent;
+    border-radius:5px;
+    box-shadow: 4px 4px 0px #592EF250;
+}
+.kb-btn-one button:hover {
+    font-family: 'Jost Regular';
+    font-size: 15px;
+    width: 225px;
+    height: 30px;
+    text-align: center;
+    margin-left: -550px;
+    margin-bottom: 15px;
+    background-color: #592EF215;
+    border-top-color: #592EF250;
+    border-left-color: #592EF250;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #592EF2;
+}
+
+.kb-btn-one img{
+    margin-top:-10px;
+    margin-left:-175px;
+    margin-bottom:25px;
+}
+.kb-btn-one p{
+    margin-left:20px;
+    margin-top:-55px;
+    margin-bottom: -10px;
+}
+
+/* -> Modelo */
+.kb-name-two {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 950px;
+    margin-top:-452px;
+}
+
+.kb-name-two h1 {
+    font-family: 'Inter Tight Regular';
+    color: #0460D9;
+    text-shadow: 2px 1px 0px #033473;
+}
+
+/* -> Precio */
+.kb-price-two {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left:750px;
+}
+
+.kb-price-two ul{
+    list-style:none;
+}
+
+.kb-price-two h2 {
+    margin-left: 560px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.kb-price-two h1 {
+    font-family: 'Inter Tight Regular';
+    font-size: 18px;
+    margin-left: 590px;
+    margin-top: -35px;
+    margin-bottom: -20px;
+    color: #592EF2;
+    text-shadow: 1px 1px 0px #141926;
+}
+
+/* -> Imagen */
+.kb-img-two {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 900px;
+}
+
+/* -> Características */
+.kb-ftrs-two {
+    display: flex;
+    justify-content: left;
+    margin-left: 825px;
+    margin-bottom: 5px;
+}
+
+.kb-ftrs-two ul {
+    margin-top: -375px;
+    margin-left: 475px;
+    margin-bottom: 0px;
+    list-style: none;
+    font-family: 'Jost Light';
+    font-size: 18px;
+
+}
+
+.kb-ftrs-two li {
+    margin-top: -5px;
+    margin-bottom: -50px;
+    color: #141926;
+}
+
+.kb-ftrs-two p {
+    text-decoration: none;
+    font-family: 'Jost Light';
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.kb-btn-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: -175px;
+}
+
+.kb-btn-two button {
+    font-family: 'Jost Light';
+    font-size: 14px;
+    width: 225px;
+    height: 30px;
+    text-align: center;
+    margin-left: 1100px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-top-color: #592EF225;
+    border-left-color: #592EF225;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #592EF250;
+}
+
+.kb-btn-two button:hover {
+    font-family: 'Jost Regular';
+    font-size: 15px;
+    width: 225px;
+    height: 30px;
+    text-align: center;
+    margin-left: 1100px;
+    margin-bottom: 15px;
+    background-color: #592EF215;
+    border-top-color: #592EF250;
+    border-left-color: #592EF250;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #592EF2;
+}
+
+.kb-btn-two img {
+    margin-top: -10px;
+    margin-left: -175px;
+    margin-bottom: 25px;
+}
+
+.kb-btn-two p {
+    margin-left: 20px;
+    margin-top: -55px;
+    margin-bottom: -10px;
+}
